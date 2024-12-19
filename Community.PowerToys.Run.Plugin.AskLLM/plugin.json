@@ -3,7 +3,7 @@
   "Name": "Ask LLM",
   "Author": "Edward Hsu",
   "Version": "1.0.0",
-  "ActionKeyword": "gpt",
+  "ActionKeyword": "llm",
   "Language": "csharp",
   "IsGlobal": true,  
   "Website": "https://aka.ms/powertoys",

@@ -14,11 +14,10 @@ public class SelectedTextRetriever
 
         SetForegroundWindow(hWm);
         
-        // Backup the original clipboard data before modifying it.
-        //var originalClipboardData = ClipboardHelper.BackupClipboard();
-
         try
         {
+            ClipboardHelper.ClearClipboard();
+            
             // Simulate Ctrl+C (Copy operation) to copy the selected text to the clipboard.
             SimulateCtrlC();
 
@@ -62,10 +61,8 @@ public class SelectedTextRetriever
             return selectedText ?? string.Empty;
         }
         finally
-        {
-            // Restore the original clipboard data that was backed up earlier.
-            //ClipboardHelper.RestoreClipboard(originalClipboardData);
-            
+        {            
+            ClipboardHelper.ClearClipboard();
             SetForegroundWindow(currentFocusWindow);
         }
     }

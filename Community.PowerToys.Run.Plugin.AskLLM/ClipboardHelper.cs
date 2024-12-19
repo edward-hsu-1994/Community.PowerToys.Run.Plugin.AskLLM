@@ -67,6 +67,21 @@ public class ClipboardHelper
         return clipboardData; // Return the dictionary containing backed up clipboard data
     }
 
+    public static void ClearClipboard()
+    {
+        if (OpenClipboard(IntPtr.Zero)) // Open the clipboard for clearing data
+        {
+            try
+            {
+                EmptyClipboard(); // Clear any existing clipboard contents
+            }
+            finally
+            {
+                CloseClipboard(); // Make sure to close the clipboard after clearing
+            }
+        }
+    }
+    
     public static void RestoreClipboard(Dictionary<uint, IntPtr> clipboardData)
     {
         if (OpenClipboard(IntPtr.Zero)) // Open the clipboard for setting data
