@@ -4,6 +4,10 @@ This is a plugin for **PowerToys Run** that allows users to interact with Langua
 
 The plugin captures the text the user selects within any application and sends it directly to the configured LLM for processing. Users will receive an automated response that provides relevant information or suggested actions based on their input. Unlike traditional API-based solutions, this plugin allows users to interact with LLMs using the models' direct URLs, provided these endpoints support prompts through URL parameters.
 
+<p align="center">
+    <img alt="demo" src="https://i.imgur.com/0Qu8g9k.gif">
+</p>
+
 > This plugin is inspired by another PowerToys Run plugin [ferraridavide/ChatGPTPowerToys](https://github.com/ferraridavide/ChatGPTPowerToys).
 
 ## Prerequisites
