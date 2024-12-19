@@ -15,7 +15,7 @@ The plugin captures the text the user selects within any application and sends i
 ## Setup Instructions
 
 1. **Installation**:
-You can build this project yourself or download the compiled version directly. After downloading, copy the compiled result to the `Plugins` folder in the `%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins` directory. Then restart PowerToys Run to use this plugin.
+You can build this project yourself or [download](https://github.com/edward-hsu-1994/Community.PowerToys.Run.Plugin.AskLLM/releases) the compiled version directly. After downloading, copy the compiled result to the `Plugins` folder in the `%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins` directory. Then restart PowerToys Run to use this plugin.
 
 2. **Configuration**:
    - Upon installation or upon opening an existing plugin configuration file, the plugin will look for `appsettings.json` in its directory.
