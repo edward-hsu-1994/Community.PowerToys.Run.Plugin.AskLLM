@@ -10,14 +10,15 @@ public class SelectedTextRetriever
     // Method to get the currently selected text in the active window.
     public static string GetSelectedText(IntPtr hWm)
     {
+        ClipboardHelper.ClearClipboard();
+        Thread.Sleep(100); // Wait for a short period to ensure the Copy operation is completed.
+
         var currentFocusWindow = GetForegroundWindow();
 
         SetForegroundWindow(hWm);
         
         try
         {
-            ClipboardHelper.ClearClipboard();
-            
             // Simulate Ctrl+C (Copy operation) to copy the selected text to the clipboard.
             SimulateCtrlC();
 
