@@ -1,0 +1,13 @@
+{
+  "ID": "D1EAC3023B954468887ED504FD866EAC",
+  "Name": "Ask LLM",
+  "Author": "Edward Hsu",
+  "Version": "1.0.0",
+  "ActionKeyword": "gpt",
+  "Language": "csharp",
+  "IsGlobal": true,  
+  "Website": "https://aka.ms/powertoys",
+  "ExecuteFileName": "Community.PowerToys.Run.Plugin.AskLLM.dll",
+  "IcoPathDark": "Images\\icon.png",
+  "IcoPathLight": "Images\\icon.png"
+}
